@@ -1,0 +1,79 @@
+
+@font-face { font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/ComicNeueRegular.ttf"); font-family: "Comic Neue";
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-display: swap;
+    src: url("../public/fonts/InterRegular.ttf");
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DaysOneRegular.ttf");
+    font-family: "Days One";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DarkerGrotesqueRegular.ttf");
+    font-family: "Darker Grotesque";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DongleRegular.ttf");
+    font-family: "Dongle";
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DMSansBlack.ttf");
+    font-family: "DM Sans";
+    font-weight: 900;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DMSansLight.ttf");
+    font-family: "DM Sans";
+    font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DMSansMedium.ttf");
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DarkerGrotesqueSemiBold.ttf");
+    font-family: "Darker Grotesque";
+    font-weight: 600;
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/DarkerGrotesqueBold.ttf");
+    font-family: "Darker Grotesque";
+    font-weight: 700;
+}

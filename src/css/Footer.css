@@ -1,0 +1,57 @@
+.panel-footer {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+    color: #eee;
+}
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+#hours, #address {
+    line-height: 2;
+}
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+#address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+#testimonials {
+    font-style: italic;
+}
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
+}
+
+#social{
+    font-size: 25px;
+    text-align: center;
+}
+
+#social_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+#foot_img_inst{
+    width: 8%;
+    position: relative;
+    margin-right: 2px;
+}
+
+#foot_img_whatsapp{
+    width: 6%;
+    position: relative;
+    margin-right: 6px;
+}
+
+#foot_text{
+    position: relative;
+    color: #eee;
+}

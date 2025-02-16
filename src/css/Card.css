@@ -1,0 +1,148 @@
+.outer__block{
+    padding: 5px 10px;
+}
+
+.section__image-row {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--gray_100_01);
+    box-shadow: var (--shadow-md);
+    padding: 6px;
+    padding-top: 12px;
+    border-radius: var(--radius-1g);
+    box-shadow: var(--shadow-xs);
+    border-radius: var(--radius-xs);
+    @media only screen and (max-width: 1050px) {flex-direction: column;}
+}
+
+/* Текст  */
+.product-details__name{
+    font-weight: bold;
+    font-size: 50px;
+    /* vertical-align: 50px; */
+    text-align: top;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Comic Neue !important;
+    align-self: center;
+    overflow: scroll;
+    scrollbar-color:rgba(239, 239, 239, 0) transparent;
+    scrollbar-width: thin;
+    overflow-y:hidden;
+    /* max-height: 57px; */
+    white-space: nowrap;
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 32px;
+        margin-left: 0px;
+    }
+    
+    @media only screen and (max-width: 550px) { font-size: 26px;}
+}
+
+.product-details__divider {
+    height: 1px;
+    margin-left: 42px;
+    margin-right: 42px;
+    background-color: var(--black_900);
+    align-self: stretch;
+    @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+}
+
+.product-details__stock {
+    margin-top: 34px;
+    margin-left: 30px;
+    font-size: 35px;
+    padding-left: 35px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-container {
+    display: flex;      
+    justify-content: start; 
+    gap: 10px;         
+    margin-top: 10px;   
+}
+
+.product-details__stock-quantity {
+    font-size: 35px;
+    padding-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+
+    overflow: scroll;
+    overflow-y:hidden;
+
+    scrollbar-color: #221d1d00 #00000000;
+    scrollbar-gutter: -100px;
+    scrollbar-width:thin;
+    white-space: nowrap;
+
+    max-height: 56px;
+
+    font-family: Darker Grotesque !important;
+    @media only screen and (max-width: 1050px) { font-size: 32px;}
+    @media only screen and (max-width: 550px) { font-size: 26px;}
+}
+
+
+.product-details__price {
+    /* margin-top: -24px; */
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: Darker Grotesque !important;
+    position: relative;
+    @media only screen and (max-width: 1050px) { font-size: 30px;}
+    @media only screen and (max-width: 550px) { font-size: 28px;}
+}
+
+.buttons-container {
+    display: flex;      
+    justify-content: end; 
+    gap: 0px;         
+    margin-top: 10px;   
+}
+
+
+.product-details__add-button {
+    color: var(--black_900) !important;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 20px !important;
+    font-family: Dongle;
+    font-size: 40px;
+    background-color: var(--lime_300_f9) !important;
+    box-shadow: 4px 4px 4px 0 #0000003f !important;
+    height: 60px !important;
+    border-radius: 14px !important;
+    border: 1px solid var(--black_900);
+    position: relative;
+    float: right;
+    @media only screen and (max-width: 1440px) {
+        font-size: 35px;
+    }
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 32px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    @media only screen and (max-width: 550px) {
+        font-size: 26px;
+        padding-left: var(--space-sm);
+        padding-right: var(--space-sm);
+    }
+}
+
+.div__for-button{
+    height: 78px;
+}

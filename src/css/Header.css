@@ -1,0 +1,115 @@
+.header__top-row {
+    background-color: var(--indigo_50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+    padding: 6px var(--space-lg);
+    @media only screen and (max-width: 550px) {
+        padding-left: var(--space-sm);
+        padding-right: var(--space-sm);
+    }
+}
+
+.flex-col-center-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-column {
+    height: 130px;
+    margin-left: 6px;
+    background-color: var(--black_900);
+    width: 130px;
+    border-radius: var(--radius-3x1);
+    @media only screen and (max-width: 1440px) {
+        height: auto;
+        margin-left: 0px;
+    }
+    
+    @media only screen and (max-width: 1050px) {
+        height: auto;
+        margin-left: 0px;
+    }
+}
+
+.header__logo {
+    color: var(--white_a700) !important;
+    margin-top: 6px;
+    font-family:"Comic Neue" !important;
+    @media only screen and (max-width: 1050px) { font-size: 32px;}
+    @media only screen and (max-width: 550px) { font-size: 26px;}
+}
+
+.header__nav-row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 158px;
+    padding-right: 56px;
+    background-color: var(--lime_200);
+    display: flex;
+    @media only screen and (max-width: 1440px) { padding-left: 32px;}
+    @media only screen and (max-width: 1050px) {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+    @media only screen and (max-width: 550px) {
+        padding-left: var(--space-sm);
+        padding-right: var(--space-sm);
+    }
+}
+
+.header__nav-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-item{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding: 8px 22px;
+}
+
+.menu-item:hover{
+    transition: 0.3s ease-in-out;
+    background: var(--amber_400_75);
+}
+
+.columnview {
+    background-color: var(--teal_100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-one__our-menu {
+    color: var(--white_a700) !important;
+    font-family: Days One !important;
+    margin-bottom: 5px  !important;
+    
+    @media only screen and (max-width: 1440px) { font-size: 38px;}
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    margin-inline: unset !important;
+    padding: 0;
+    list-style: none;
+}
