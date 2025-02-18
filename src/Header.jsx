@@ -1,3 +1,4 @@
+import Pomodoro from './Pomodoro';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/font.css'
 import './css/components.css'
@@ -14,6 +15,7 @@ function Header({ onNewTask }) {
                     <div className="flex-col-center-center header__logo-column">
                         <p className="header__logo ui text size-text3x1">Logo</p>
                     </div>
+                    <Pomodoro />
                 </div>
 
                 <div className="header__nav-row">
