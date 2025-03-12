@@ -1,0 +1,42 @@
+.header__timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    gap: 0px;
+    position: relative;
+    float: left;
+}
+
+.timer__label {
+    font-size: 18px;
+    color: var(--black_900);
+}
+
+.timer__btn__container {
+    display: flex;  
+    flex-direction: row;  
+    gap: 10px;  
+}
+
+.timer__btn {
+    background: var(--indigo_500);
+    background-color: #b5e7d5d6;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.timer__btn:hover {
+    background: #77a997d6;
+}
+
+.reset__btn {
+    background: rgb(225, 107, 107);
+}
+
+.reset__btn:hover {
+    background: darkred;
+}

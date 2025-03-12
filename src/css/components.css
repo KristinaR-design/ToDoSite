@@ -179,7 +179,7 @@
 
 .ui.text {
     color: var(--black_900);
-    font-family: Sansation;
+    /* font-family: Sansation; */
 }
 
 /*---------------------------------------------------------------------------*/

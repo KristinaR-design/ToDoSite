@@ -88,7 +88,7 @@
 }
 
 .frame-one__our-menu {
-    color: var(--white_a700) !important;
+    color: var(--black_900) !important;
     font-family: Days One !important;
     margin-bottom: 5px  !important;
     
@@ -114,43 +114,52 @@ ul {
     list-style: none;
 }
 
-/* TIMER */
 
-.header__timer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
+/* Контейнер переключателя */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
 }
 
-.timer-label {
-    font-size: 18px;
+/* Исходный чекбокс (скрываем) */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.timer-btn-container {
-    display: flex;  
-    flex-direction: row;  
-    gap: 10px;  
-}
-
-.timer-btn {
-    background: var(--indigo_500);
-    background-color: #b5e7d5d6;
-    border: none;
-    padding: 5px 10px;
+/* Движущийся элемент слайдера */
+.slider {
+    position: absolute;
     cursor: pointer;
-    border-radius: 4px;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+    border: 1px solid #999; /* Добавил границу */
 }
 
-.timer-btn:hover {
-    background: #77a997d6;
+/* Круглая кнопка внутри слайдера */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 1px solid #666; /* Граница для видимости */
 }
 
-.reset-btn {
-    background: rgb(225, 107, 107);
+/* Когда чекбокс включен (checked), меняем цвет и двигаем кнопку */
+input:checked + .slider {
+    background-color: #4CAF50;
 }
 
-.reset-btn:hover {
-    background: darkred;
+input:checked + .slider::before {
+    transform: translateX(25px);
 }

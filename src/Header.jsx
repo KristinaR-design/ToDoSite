@@ -1,13 +1,27 @@
-import Pomodoro from './Pomodoro';
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/font.css'
 import './css/components.css'
 import './css/Header.css'
+import { useTheme } from './theme'
 
 
 
 
-function Header({ onNewTask }) {
+function Header({ onNewTask, onNavigate }) {
+
+    const { theme, setTheme } = useTheme()
+
+    const switchTheme = (e) => {
+        if (e.target.checked) {
+            setTheme('dark')
+        }
+        else {
+            setTheme('light')
+        }
+    };
+
+
     return (
         <>
             <header>
@@ -15,7 +29,15 @@ function Header({ onNewTask }) {
                     <div className="flex-col-center-center header__logo-column">
                         <p className="header__logo ui text size-text3x1">Logo</p>
                     </div>
-                    <Pomodoro />
+
+                    <label className='switch'>
+                        <input
+                            type='checkbox'
+                            onChange={switchTheme} />
+                        <span className="slider"></span>
+                    </label>
+
+
                 </div>
 
                 <div className="header__nav-row">
@@ -28,7 +50,7 @@ function Header({ onNewTask }) {
                         </li>
 
                         <li>
-                            <button className="menu-item">
+                            <button className="menu-item" onClick={() => onNavigate("history")} >
                                 <p style={{ fontFamily: "Darker Grotesque" }} className="ui text size-textxl">History</p>
                             </button>
                         </li>
